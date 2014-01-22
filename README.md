@@ -1,6 +1,5 @@
-awayken.github.com
-==================
+# awayken.github.com
 
-This project very simply displays a countdown before taking the user to [http://awayken.com Awayken.com].
+This project very simply displays a countdown before taking the user to [Of Miles Rausch](http://www.milesrausch.com).
 
-Uses the [http://html5boilerplate.com/ HTML5 Boilerplate].
+Uses the [HTML5 Boilerplate](http://html5boilerplate.com/).
