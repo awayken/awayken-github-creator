@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "next": "^3.0.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "name": "awayken-history",
+  "version": "1.0.0",
+  "description": "We all have a web history. Some of us just host it on GitHub.",
+  "main": "index.js",
+  "repository": "https://github.com/awayken/history.git",
+  "author": "Miles Rausch <miles@milesrausch.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
