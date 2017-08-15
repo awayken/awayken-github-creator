@@ -1,17 +1,12 @@
-export default ({ invert = false, children }) => (
-    <section className={ invert ? 'is-inverted' : '' }>
+export default ({ children }) => (
+    <section>
         <div className="wrap">{ children }</div>
 
         <style jsx>{`
             section {
                 box-sizing: border-box;
-                min-height: 95vh;
+                min-height: 98vh;
                 padding: 1em .5em;
-            }
-
-            .is-inverted {
-                background: #606;
-                color: #fff;
             }
         `}</style>
     </section>
