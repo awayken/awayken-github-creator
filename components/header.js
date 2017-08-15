@@ -1,14 +1,9 @@
-import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
 const isProd = process.env.NODE_ENV === 'production';
 
 const defaultTitle = `Miles's History`
-let siteRoot = `/`
-if (isProd) {
-    siteRoot = `/history`
-}
 
 export default ({ pageTitle, activeNav = `home` }) => (
     <header>
@@ -20,13 +15,13 @@ export default ({ pageTitle, activeNav = `home` }) => (
 
         <section className="wrap">
             <h2>
-                <Link href={siteRoot}>
-                    <a>History</a>
+                <Link href="/">
+                    <a>Awayken</a>
                 </Link>
             </h2>
 
             <nav>
-                <Link prefetch={isProd} href={siteRoot}>
+                <Link prefetch={isProd} href="/">
                     <a>Home</a>
                 </Link>
             </nav>
