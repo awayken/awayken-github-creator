@@ -36,11 +36,13 @@ export default () => (
                 justify-content: space-between;
             }
 
-            @media (orientation: landscape) {
+            @media (min-height: 20em) {
                 div {
                     min-height: 100vh;
                 }
+            }
 
+            @media (orientation: landscape) {
                 article {
                     flex-direction: row;
                 }
