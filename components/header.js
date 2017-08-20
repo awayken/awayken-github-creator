@@ -1,34 +1,23 @@
-import Link from 'next/link'
-import Head from 'next/head'
-
-const isProd = process.env.NODE_ENV === 'production';
-
-const defaultTitle = `Miles's History`
-
-export default ({ pageTitle, activeNav = `home` }) => (
+export default () => (
     <header>
-        <Head>
-            <title>{pageTitle ? `${defaultTitle} – ${pageTitle}` : defaultTitle}</title>
-            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            <link rel="stylesheet" href="/static/styles.css" />
-        </Head>
+        <div>gravatar</div>
 
-        <section className="wrap">
-            <h2>
-                <Link href="/">
-                    <a>Awayken</a>
-                </Link>
-            </h2>
-
-            <nav>
-                <Link prefetch={isProd} href="/">
-                    <a>Home</a>
-                </Link>
-            </nav>
-        </section>
+        <h1>Miles Rausch</h1>
+        <h2>A writer for people and a writer for computers.</h2>
 
         <style jsx>{`
+            header {
+                text-align: center;
+            }
 
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+                font-style: italic;
+            }
         `}</style>
     </header>
 )

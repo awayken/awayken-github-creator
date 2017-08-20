@@ -1,14 +1,50 @@
-import Layout from '../components/layout'
-import Panel from '../components/panel'
+import Head from 'next/head'
 
+import Panel from '../components/panel'
+import Header from '../components/header'
 import Bio from '../components/bio'
+import Footer from '../components/footer'
 
 export default () => (
-    <Layout>
-        <Panel>
-            <h1>awayken.com</h1>
-        </Panel>
+    <div>
+        <Head>
+            <title>Awayken</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <link rel="stylesheet" href="/static/styles.css" />
+        </Head>
 
-        <Bio />
-    </Layout>
+        <article>
+            <Panel>
+                <Header />
+            </Panel>
+            <Panel>
+                <Bio />
+            </Panel>
+        </article>
+
+        <Footer />
+
+        <style jsx>{`
+            article {
+                display: flex;
+                flex-direction: column;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            @media (orientation: landscape) {
+                div {
+                    min-height: 100vh;
+                }
+
+                article {
+                    flex-direction: row;
+                }
+            }
+        `}</style>
+    </div>
 )

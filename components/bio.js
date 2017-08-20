@@ -1,7 +1,5 @@
-import Panel from './panel'
-
 export default () => (
-    <Panel>
+    <section>
         <h1>Bio</h1>
 
         <p>Hi, there. I'm Miles, a web developer from Sioux Falls, South Dakota.</p>
@@ -16,5 +14,30 @@ export default () => (
         <p>I'm self-motivated and self-disciplined. My goal with every project is producing the best product for the end user. I try to achieve this by writing my own code, adhering to HTML standards and best practices, and constantly and tirelessly learning and growing my craft.</p>
 
         <p>Also, I'm funny. (I mean, not so much right now, but usually.)</p>
-    </Panel>
+
+        <style jsx>{`
+            a,
+            a:link,
+            a:visited {
+                background: #606;
+                border-radius: 5px;
+                color: rgba(255, 255, 255, .75);
+                display: inline-block;
+                font-size: .9em;
+                padding: 0 .3em;
+                text-decoration: none;
+                text-shadow: 0 0 3px rgba(0, 0, 0, .8);
+                transition: all ease-in 100ms;
+            }
+
+            a:hover,
+            a:active,
+            a:focus {
+                color: #fff;
+                padding-left: .4em;
+                padding-right: .4em;
+                transition: all ease-in 200ms;
+            }
+        `}</style>
+    </section>
 )
