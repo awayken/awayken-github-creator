@@ -19,24 +19,14 @@ export default () => (
             a,
             a:link,
             a:visited {
-                background: #606;
-                border-radius: 5px;
-                color: rgba(255, 255, 255, .75);
-                display: inline-block;
-                font-size: .9em;
-                padding: 0 .3em;
-                text-decoration: none;
-                text-shadow: 0 0 3px rgba(0, 0, 0, .8);
-                transition: all ease-in 100ms;
+                color: #606;
+                text-decoration: underline;
             }
 
             a:hover,
             a:active,
             a:focus {
-                color: #fff;
-                padding-left: .4em;
-                padding-right: .4em;
-                transition: all ease-in 200ms;
+                text-decoration: none;
             }
         `}</style>
     </section>
