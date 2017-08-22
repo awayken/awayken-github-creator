@@ -4,15 +4,15 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
-  "name": "awayken-history",
-  "version": "1.0.0",
-  "description": "We all have a web history. Some of us just host it on GitHub.",
+  "name": "awayken-github-creator",
+  "version": "2.0.0",
+  "description": "Creates my awayken.github.io homepage.",
   "main": "index.js",
   "repository": "https://github.com/awayken/history.git",
   "author": "Miles Rausch <miles@milesrausch.com>",
   "license": "MIT",
   "scripts": {
-    "build": "next build && next export && git subtree push --prefix out origin gh-pages",
+    "build": "next build && next export -o awayken.github.io",
     "dev": "next",
     "start": "next start"
   }
