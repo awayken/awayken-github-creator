@@ -15,5 +15,8 @@
     "build": "next build && next export -o awayken.github.io",
     "dev": "next",
     "start": "next start"
+  },
+  "devDependencies": {
+    "workbox-webpack-plugin": "^2.0.3"
   }
 }

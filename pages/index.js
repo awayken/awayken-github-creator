@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import ServiceWorker from '../components/serviceworker'
 import Panel from '../components/panel'
 import Header from '../components/header'
 import Bio from '../components/bio'
@@ -12,6 +13,8 @@ export default () => (
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <link rel="stylesheet" href="/static/styles.css" />
         </Head>
+
+        <ServiceWorker />
 
         <article>
             <Panel>
