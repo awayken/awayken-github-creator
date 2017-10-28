@@ -2,18 +2,20 @@
   "dependencies": {
     "next": "^3.0.3",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "workbox-cli": "^2.1.0"
   },
   "name": "awayken-github-creator",
   "version": "2.0.0",
   "description": "Creates my awayken.github.io homepage.",
   "main": "index.js",
-  "repository": "https://github.com/awayken/history.git",
+  "repository": "https://github.com/awayken/awayken-github-creator.git",
   "author": "Miles Rausch <miles@milesrausch.com>",
   "license": "MIT",
   "scripts": {
-    "build": "next build && next export -o awayken.github.io",
+    "build": "next build && next export -o awayken.github.io && workbox generate:sw",
     "dev": "next",
     "start": "next start"
-  }
+  },
+  "devDependencies": {}
 }
