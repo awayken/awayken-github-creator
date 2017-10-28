@@ -8,7 +8,7 @@
   "version": "2.0.0",
   "description": "Creates my awayken.github.io homepage.",
   "main": "index.js",
-  "repository": "https://github.com/awayken/history.git",
+  "repository": "https://github.com/awayken/awayken-github-creator.git",
   "author": "Miles Rausch <miles@milesrausch.com>",
   "license": "MIT",
   "scripts": {
