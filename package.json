@@ -16,7 +16,5 @@
     "dev": "next",
     "start": "next start"
   },
-  "devDependencies": {
-    "workbox-webpack-plugin": "^2.0.3"
-  }
+  "devDependencies": {}
 }
