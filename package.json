@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "next": "^3.0.3",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "next": "^4.2.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "workbox-cli": "^2.1.0"
   },
   "name": "awayken-github-creator",
