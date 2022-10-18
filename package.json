@@ -1,10 +1,10 @@
 {
   "dependencies": {
     "hoek": "^5.0.3",
-    "next": "^11.1.3",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "workbox-cli": "^2.1.0"
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "workbox-cli": "^6.5.4"
   },
   "name": "awayken-github-creator",
   "version": "2.0.0",
@@ -17,6 +17,5 @@
     "build": "next build && next export -o awayken.github.io && workbox generate:sw",
     "dev": "next",
     "start": "next start"
-  },
-  "devDependencies": {}
+  }
 }
