@@ -16,6 +16,6 @@
   "scripts": {
     "build": "next build && next export -o awayken.github.io && workbox generate:sw",
     "dev": "next",
-    "start": "next start"
+    "start": "next build && next start"
   }
 }
