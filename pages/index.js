@@ -1,54 +1,41 @@
 import Head from 'next/head'
 
-import ServiceWorker from '../components/serviceworker'
-import Panel from '../components/panel'
 import Header from '../components/header'
 import Bio from '../components/bio'
 import Footer from '../components/footer'
 
 export default () => (
-    <div>
+    <>
         <Head>
             <title>Awayken</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
 
-        <ServiceWorker />
-
-        <article>
-            <Panel>
-                <Header />
-            </Panel>
-            <Panel>
-                <Bio />
-            </Panel>
-        </article>
-
-        <Footer />
+        <main>
+            <Header />
+            <Bio />
+            <Footer />
+        </main>
 
         <style jsx>{`
-            article {
-                display: flex;
-                flex-direction: column;
+            main {
+                display: grid;
+                gap: 1rem;
+                grid-template-areas:
+                    "header"
+                    "bio"
+                    "footer";
+                min-height: 100vh;
             }
 
-            div {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-
-            @media (min-height: 20em) {
-                div {
-                    min-height: 100vh;
-                }
-            }
-
-            @media (orientation: landscape) {
-                article {
-                    flex-direction: row;
+            @media (min-width: 40rem) {
+                main {
+                    grid-template-areas:
+                        "header bio"
+                        "footer footer";
+                    grid-template-rows: auto min-content;
                 }
             }
         `}</style>
-    </div>
+    </>
 );

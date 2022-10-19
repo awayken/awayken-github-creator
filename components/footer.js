@@ -1,23 +1,24 @@
-const copyrightYear = new Date().getFullYear()
+import ServiceWorker from './serviceWorker';
+
+const copyrightYear = new Date().getFullYear();
 
 export default ({ year }) => (
     <footer>
-        <section>
-            <p>&copy; {year ? year : copyrightYear} Miles Rausch</p>
+        <p>&copy; {year ? year : copyrightYear} Miles Rausch</p>
 
-            <nav>
-                <a href="https://stackoverflow.com/story/awayken">Resume</a>
-                <a href="http://www.milesrausch.com/">MilesRausch.com</a>
-                <a href="http://miles.ink/">Miles.ink</a>
-                <a href="https://twitter.com/awayken">Twitter/@awayken</a>
-                <a href="https://github.com/awayken">GitHub/awayken</a>
-            </nav>
-        </section>
+        <nav>
+            <a href="http://www.milesrausch.com/">MilesRausch.com</a>
+            <a href="http://miles.ink/">Miles.ink</a>
+            <a href="https://github.com/awayken">GitHub/awayken</a>
+        </nav>
+
+        <ServiceWorker />
 
         <style jsx>{`
             footer {
                 background: #606;
                 color: #fff;
+                grid-area: footer;
                 padding: 2em .5em;
                 text-align: center;
             }

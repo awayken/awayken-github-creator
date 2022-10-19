@@ -13,8 +13,6 @@ export default class extends React.PureComponent {
         }
     }
     render () {
-        return (
-            <span />
-        )
+        return <span />;
     }
 }
