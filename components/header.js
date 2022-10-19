@@ -5,7 +5,7 @@ export default () => (
         <Gravatar email="miles@milesrausch.com" />
 
         <h1>Miles Rausch</h1>
-        <h2>A writer for people and a writer for computers.</h2>
+        <span>A writer for people and a writer for computers.</span>
 
         <style jsx>{`
             header {
@@ -16,9 +16,10 @@ export default () => (
                 font-size: 2em;
             }
 
-            h2 {
+            span {
                 font-size: 1.3em;
                 font-style: italic;
+                font-weight: bold;
                 line-height: 1.2;
             }
         `}</style>
