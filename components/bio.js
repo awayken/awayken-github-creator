@@ -13,6 +13,13 @@ export default () => (
         <p>I'm self-motivated and self-disciplined. My goal with every project is producing the best product for the end user. I try to achieve this by writing my own code, adhering to HTML standards and best practices, and constantly and tirelessly learning and growing my craft.</p>
 
         <style jsx>{`
+            section {
+                align-content: center;
+                display: grid;
+                grid-area: bio;
+                padding: 1em .5em;
+            }
+
             a,
             a:link,
             a:visited {

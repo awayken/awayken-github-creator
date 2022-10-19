@@ -9,6 +9,10 @@ export default () => (
 
         <style jsx>{`
             header {
+                align-content: center;
+                display: grid;
+                grid-area: header;
+                padding: 1em .5em;
                 text-align: center;
             }
 

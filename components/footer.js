@@ -1,4 +1,6 @@
-const copyrightYear = new Date().getFullYear()
+import ServiceWorker from './serviceWorker';
+
+const copyrightYear = new Date().getFullYear();
 
 export default ({ year }) => (
     <footer>
@@ -10,10 +12,13 @@ export default ({ year }) => (
             <a href="https://github.com/awayken">GitHub/awayken</a>
         </nav>
 
+        <ServiceWorker />
+
         <style jsx>{`
             footer {
                 background: #606;
                 color: #fff;
+                grid-area: footer;
                 padding: 2em .5em;
                 text-align: center;
             }
